@@ -6,6 +6,8 @@ var setter1 = true;
 var backgroundSetter = true;
 var skillsSetter = true;
 
+
+
 	$('#introPosition1').velocity({'right':'71%'}, 1000, function(){
 
 			$('#introPosition1').click(function(){
@@ -106,59 +108,34 @@ var skillsSetter = true;
 				
 					$(this).velocity({'color': '#ffffff'}, 50);
 
-
+					$('#skillsList').velocity({'right':'-30%'});
 					$('#introPosition1').velocity({'top': '-30%'});
   					$('#introPosition3').velocity({'top':'7%'});
-  					$('#introPosition3').velocity({'left':'60%'});
+  					$('#introPosition3').velocity({'left':'62%'});
 					$('#introPosition2').velocity({'top': '-30%'});
 					$('#introPosition4').velocity({'top': '-30%'});
 
 					$('#myBody').velocity({'background-color': '#2c353e'});
-					$('#skillsPosition1').velocity({'color': '#ffffff'}, 50);
-  					$('#skillsPosition2').velocity({'color': '#ffffff'}, 50);
-  					$('#skillsPosition3').velocity({'color': '#ffffff'}, 50);
-					$('#skillsPosition4').velocity({'color': '#ffffff'}, 50);
-					$('#skillsPosition5').velocity({'color': '#ffffff'}, 50);
-					$('#skillsPosition6').velocity({'color': '#ffffff'}, 50);
-					$('#skillsPosition7').velocity({'color': '#ffffff'}, 50);
-
-
-
-					$('#skillsPosition1').velocity({'top': '20%'});
-  					$('#skillsPosition2').velocity({'top':'30%'});
-  					$('#skillsPosition3').velocity({'top':'40%'});
-					$('#skillsPosition4').velocity({'top': '50%'});
-					$('#skillsPosition5').velocity({'top': '60%'});
-					$('#skillsPosition6').velocity({'top':'70%'});
-					$('#skillsPosition7').velocity({'top': '80%'});
-				
-
-					$('#skillsPosition1').velocity({'left': '60%'});
-  					$('#skillsPosition2').velocity({'left':'60%'});
-  					$('#skillsPosition3').velocity({'left':'60%'});
-					$('#skillsPosition4').velocity({'left': '60%'});
-					$('#skillsPosition5').velocity({'left': '60%'});
-					$('#skillsPosition6').velocity({'left': '60%'});
-					$('#skillsPosition7').velocity({'left': '60%'});
+					$('.skillsBoxStyle').velocity({'left': '55%'});
 
 
 					$('#skillsPosition1').click(function(){
 
-						
-						
 						var css = document.getElementById("skillsBoxHeader");
 						css.innerHTML = "<p>CSS</p>";
 
-
 						if (skillsSetter == true){
 
-							$('#skillsBoxHeader').velocity({'right': '10%'});
-							$('#skillsBox').velocity({'right': '10%'});
+							$('#skillsBoxHeader').velocity({'right': '5%'});
+							$('#skillsBox').velocity({'right': '5%'});
 							skillsSetter = false;
 						
 						}
 
 					});
+
+
+
 
 					$('#skillsPosition2').click(function(){
 
@@ -166,11 +143,29 @@ var skillsSetter = true;
 
 						if (skillsSetter == true){
 
-							$('#skillsBoxHeader').velocity({'right': '10%'});
-							$('#skillsBox').velocity({'right': '10%'});
+							$('#skillsBoxHeader').velocity({'right': '5%'});
+							$('#skillsBox').velocity({'right': '5%'});
 							skillsSetter = false;
 						
 						}
+
+
+					});
+
+
+
+					$('.skillsBoxStyle').click(function(){
+
+						document.getElementById("skillsBoxHeader").innerHTML = "<p>HTML</p>";
+
+						if (skillsSetter == true){
+
+							$('#skillsBoxHeader').velocity({'right': '5%'});
+							$('#skillsBox').velocity({'right': '5%'});
+							skillsSetter = false;
+						
+						}
+
 
 					});
 				
@@ -193,13 +188,9 @@ var skillsSetter = true;
 					$('#introPosition3').velocity({'top': '40%'}, 400);
 					$('#introPosition4').velocity({'top': '40%'}, 450);
 
-					$('#skillsPosition1').velocity({'left': '-60%'});
-  					$('#skillsPosition2').velocity({'left':'-60%'});
-  					$('#skillsPosition3').velocity({'left':'-60%'});
-					$('#skillsPosition4').velocity({'left': '-60%'});
-					$('#skillsPosition5').velocity({'left': '-60%'});
-					$('#skillsPosition6').velocity({'left': '-60%'});
-					$('#skillsPosition7').velocity({'left': '-60%'});
+					$('.skillsBoxStyle').velocity({'left': '-60%'});
+
+
 
 
 					setter = true;
