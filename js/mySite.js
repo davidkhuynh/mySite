@@ -6,8 +6,6 @@ var setter1 = true;
 var backgroundSetter = true;
 var skillsSetter = true;
 
-
-
 	$('#introPosition1').velocity({'right':'71%'}, 1000, function(){
 
 			$('#introPosition1').click(function(){
